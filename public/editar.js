@@ -19,7 +19,7 @@ const email = document.querySelector('#email');
 
 document.addEventListener('DOMContentLoaded', async () => {
     // Traemos la reserva que se va a editar
-    const response = await fetch(`/api/:id/${reservaId}`);
+    const response = await fetch(`/api/${reservaId}`);
     const data = await response.json();
 
     // Mostrar en el formulario los datos de la reserva que se quiere actualizar
