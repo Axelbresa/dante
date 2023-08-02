@@ -5,7 +5,7 @@ const morgan = require("morgan");
 const path = require("path");
 require("dotenv").config();
 require("ejs");
-const { sequelize } = require("./database/db");
+const { sequelize } = require("./src/database/db");
 
 const app = express();
 
@@ -21,7 +21,7 @@ app.set("view engine", "ejs");
 const PORT = process.env.PORT || 3200;
 // const rutas = require("./routes/users.routes");
 // app.use(rutas);
-app.use('/', require('./routes/users.routes'));
+app.use('/', require('./src/routes/users.routes'));
 
 //static files
  app.use(express.static(path.join(__dirname,"public")))
