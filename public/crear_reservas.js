@@ -1,8 +1,9 @@
+console.log("hola");
 const formCrearReserva = document.querySelector("#formNuevaReserva");
-const boton_guardar = document.querySelector("#boton_guardar");
+//const boton_guardar = document.querySelector("#boton_guardar");
 
 
-boton_guardar.addEventListener("click", async (e) => {
+formCrearReserva.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const nombre = document.querySelector("#nombre").value;
