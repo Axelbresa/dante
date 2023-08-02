@@ -12,9 +12,9 @@ const {
   const routes = require("express").Router();
   
   //vistas
-    // routes.get('/api', (req, res) => {
-    //   res.send("h")
-    //  })
+     routes.get('/a', (req, res) => {
+       res.send("h")
+      })
 
   routes.get("/crear", crearreserva);
   routes.get("/app", (req, res)=>{
