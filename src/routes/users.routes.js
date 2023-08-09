@@ -12,16 +12,10 @@ const {
   const routes = require("express").Router();
   
   //vistas
-     routes.get('/a', (req, res) => {
-       res.send("h")
-      })
+  
 
   routes.get("/crear", crearreserva);
-  routes.get("/app", (req, res)=>{
-    res.render("index");
-  });
-
-  
+ 
   routes.get("/", lista);
   
   routes.get("/editar/:id", renderEditar);

@@ -1,4 +1,3 @@
-console.log("hola");
 const formCrearReserva = document.querySelector("#formNuevaReserva");
 //const boton_guardar = document.querySelector("#boton_guardar");
 
@@ -20,7 +19,7 @@ formCrearReserva.addEventListener("submit", async (e) => {
   const reserva = {
     nombre,
     apellido,
-    fecha_ingreso,
+    fecha,
     fecha_salida,
     nro_asiento,
     clase,
@@ -30,7 +29,7 @@ formCrearReserva.addEventListener("submit", async (e) => {
     email
   };
 
-  const response = await fetch("/api", {
+  const response = await fetch("/api/", {
     method: "POST",
     body: JSON.stringify(reserva),
     headers: {
