@@ -15,44 +15,12 @@ const Reserva = sequelize.define(
       allowNull: false,
       unique: true,
     },
-    nombre: {
+    ruta_imagen: {
       type: DataTypes.STRING(100),
       allowNull: false,
     },
-    apellido: {
+    Descripcion: {
       type: DataTypes.STRING(100),
-      allowNull: false,
-    },
-    fecha_ingreso: {
-      type: DataTypes.DATE,
-      allowNull: false,
-    },
-    fecha_salida: {
-      type: DataTypes.DATE,
-      allowNull: false,
-    },
-    nro_asiento: {
-      type: DataTypes.STRING(100),
-      allowNull: false,
-    },
-    destino: {
-      type: DataTypes.STRING(100),
-      allowNull: false,
-    },
-    clase: {
-      type: DataTypes.STRING(100),
-      allowNull: false,
-    },
-    cantidad_personas: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    telefono: {
-      type: DataTypes.STRING(100),
-      allowNull: false,
-    },
-    email: {
-      type: DataTypes.STRING(50),
       allowNull: false,
     },
     estado: {

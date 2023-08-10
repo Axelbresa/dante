@@ -7,7 +7,6 @@ const reservaId = formReserva.dataset.id;
 
 const nombre = document.querySelector('#nombre');
 const apellido = document.querySelector('#apellido');
-const fecha_ingreso = document.querySelector('#fecha_ingreso');
 const fecha_salida = document.querySelector('#fecha_salida');
 const nro_asiento = document.querySelector('#nro_asiento');
 const destino = document.querySelector('#destino');

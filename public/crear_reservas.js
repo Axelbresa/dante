@@ -7,7 +7,6 @@ formCrearReserva.addEventListener("submit", async (e) => {
 
   const nombre = document.querySelector("#nombre").value;
   const apellido = document.querySelector("#apellido").value;
-  const fecha_ingreso = document.querySelector("#fecha_ingreso").value;
   const fecha_salida = document.querySelector("#fecha_salida").value;
   const nro_asiento = document.querySelector("#nro_asiento").value;
   const destino = document.querySelector("#destino").value;
@@ -19,7 +18,6 @@ formCrearReserva.addEventListener("submit", async (e) => {
   const reserva = {
     nombre,
     apellido,
-    fecha,
     fecha_salida,
     nro_asiento,
     clase,
