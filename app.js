@@ -55,6 +55,7 @@ app.use('/', require('./src/routes/galleries.routes'));
 // })
 
 
+
 //arrancampos el servidor
 app.listen(PORT, function (req, res) {
   console.log("la app esta escuchando en http://localhost: " + PORT);

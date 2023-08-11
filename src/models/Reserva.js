@@ -10,14 +10,10 @@ const Reserva = sequelize.define(
       primaryKey: true,
       autoIncrement: true,
     },
-    codigo: {
-      type: DataTypes.STRING(100),
-      allowNull: false,
-      unique: true,
-    },
     ruta_imagen: {
       type: DataTypes.STRING(100),
       allowNull: false,
+      unique: true,
     },
     Descripcion: {
       type: DataTypes.STRING(100),
